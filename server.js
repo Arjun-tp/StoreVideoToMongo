@@ -25,9 +25,7 @@ mongoose.connection.on('connected', function () {
     express.listen(port);
     console.log('Server started successfully.. !!! Times- PORT - ' + port + '\n\n\n');
     let services = require('./services')
-
-// checkMongo();
-services.putMongo();
+    services.putMongo();
 // consumer.consumerFunc()
 });
 
